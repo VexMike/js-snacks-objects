@@ -1,4 +1,4 @@
-console.log('JS Snacks Object');
+console.log('JS Snacks 3 Object');
 
 // Crea un array di oggetti che rappresentano degli animali.
 // Ogni animale ha un nome, una famiglia e una classe.
@@ -77,17 +77,23 @@ const animali = [
 
 // console.log(animali);
 
-const mammiferi = [];
+const mammiferi = []; // Array vuoto
+
+// Creo ciclo per selezionare i mammiferi
 
 for (let i = 0; i < animali.length; i++) {
     const classeAnimali = animali[i];
     
     console.log(classeAnimali);
 
+    // SE classe animali = Mammifero
+    // ALLORA = true
+
     if (classeAnimali.classe === 'Mammifero') {
         mammiferi.push(classeAnimali);
-        
     }
 }
+
+// Stampa array Mammiferi
 
 console.log(mammiferi);
